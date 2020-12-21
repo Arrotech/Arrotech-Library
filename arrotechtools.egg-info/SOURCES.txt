@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+arrotechtools/__init__.py
+arrotechtools.egg-info/PKG-INFO
+arrotechtools.egg-info/SOURCES.txt
+arrotechtools.egg-info/dependency_links.txt
+arrotechtools.egg-info/requires.txt
+arrotechtools.egg-info/top_level.txt
