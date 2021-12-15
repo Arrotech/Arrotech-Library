@@ -70,7 +70,6 @@ class Validators:
 class Serializer:
     """This class serializes data."""
 
-    @classmethod
     def serialize(cls, response, status_code, message=200):
         """Serializes data output."""
         if status_code in (400, 401, 403, 404, 405, 500):
@@ -85,7 +84,6 @@ class Serializer:
             "data": response
         }), status_code
 
-    @classmethod
     def raise_error(cls, status, msg):
         """Display error message."""
         return json.dumps({
@@ -93,7 +91,6 @@ class Serializer:
             "message": msg
         }), status
 
-    @classmethod
     def bad_request(cls, e):
         """Capture bad request error."""
         return json.dumps({
@@ -101,7 +98,6 @@ class Serializer:
             "message": "bad request"
         }), 400
 
-    @classmethod
     def page_not_found(cls, e):
         """Capture not found error."""
         return json.dumps({
@@ -109,7 +105,6 @@ class Serializer:
             "message": "resource not found"
         }), 404
 
-    @classmethod
     def method_not_allowed(cls, e):
         """Capture method not allowed error."""
         return json.dumps({
@@ -117,7 +112,6 @@ class Serializer:
             "message": "method not allowed"
         }), 405
 
-    @classmethod
     def internal_server_error(cls, e):
         """Capture internal server error."""
         return json.dumps({
