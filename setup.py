@@ -12,10 +12,21 @@ classifiers = [
   'Programming Language :: Python :: 3.6',
   'Programming Language :: Python :: 3.7'
 ]
+
+# Delete all files in the dist folder.
+
+# Update the version number in the setup.py file.
+
+# Re-create the wheels:
+
+# python3 setup.py sdist bdist_wheel
+# Re-upload the new files:
+
+# twine upload dist/*
  
 setup(
   name='arrotechtools',
-  version='0.0.4',
+  version='0.0.9',
   description='Library with most of the useful methods in the world of programming',
   long_description=long_description,
   long_description_content_type="text/markdown",
