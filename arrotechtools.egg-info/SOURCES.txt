@@ -4,6 +4,9 @@ MANIFEST.in
 README.md
 setup.py
 arrotechtools/__init__.py
+arrotechtools/auth.py
+arrotechtools/serializer.py
+arrotechtools/validator.py
 arrotechtools.egg-info/PKG-INFO
 arrotechtools.egg-info/SOURCES.txt
 arrotechtools.egg-info/dependency_links.txt
