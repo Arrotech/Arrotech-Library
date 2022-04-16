@@ -135,3 +135,21 @@ class Validate:
         if re.match(r"^[A-Za-z]{2,25}||\s[A-Za-z]{2,25}$", variable):
             return True
         return False
+
+    @classmethod
+    def request_body_keys(cls, request, req_body_keys=[]):
+        """_summary_
+
+        Args:
+            request (_type_): _description_
+            req_body_keys (list, optional): _description_. Defaults to [].
+
+        Returns:
+            _type_: _description_
+        """
+        res_keys = req_body_keys
+        errors = []
+        for key in res_keys:
+            if key not in request.json:
+                errors.append(key)
+        return errors

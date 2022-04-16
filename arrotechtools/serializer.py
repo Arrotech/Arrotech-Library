@@ -75,7 +75,7 @@ class ErrorHandler:
         }), status_code)
 
     @classmethod
-    def bad_request(cls):
+    def bad_request(cls, e):
         """_summary_
 
         Returns:
@@ -87,7 +87,7 @@ class ErrorHandler:
         }), 400)
 
     @classmethod
-    def page_not_found(cls):
+    def page_not_found(cls, e):
         """_summary_
 
         Returns:
@@ -99,7 +99,7 @@ class ErrorHandler:
         }), 404)
 
     @classmethod
-    def method_not_allowed(cls):
+    def method_not_allowed(cls, e):
         """_summary_
 
         Returns:
@@ -111,7 +111,7 @@ class ErrorHandler:
         }), 405)
 
     @classmethod
-    def internal_server_error(cls):
+    def internal_server_error(cls, e):
         """_summary_
 
         Returns:
