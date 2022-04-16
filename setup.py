@@ -29,7 +29,7 @@ classifiers = [
 
 setup(
     name='arrotechtools',
-    version='1.7',
+    version='1.9',
     description='Library with most of the useful methods in the world of programming',
     long_description=long_description,
     long_description_content_type="text/markdown",
